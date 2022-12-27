@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 1516bdd64e1d93340b1541a2599e5f8f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - sonidoMoneda: {fileID: 7298332000309067622, guid: 79ee7a0ee90a4e349bfa7b84b5a7ef1f, type: 3}
+  - puntajeText: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
