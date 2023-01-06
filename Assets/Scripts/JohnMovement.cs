@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class JohnMovement : MonoBehaviour
 {
+    public static JohnMovement instance;
    // public AudioClip salto_sound;
     public float Speed;
     public float JumpForce;
@@ -26,8 +28,12 @@ public class JohnMovement : MonoBehaviour
     public bool izq=false;
     public bool der=false;
     public CharacterController controller;
+    private SpriteRenderer sprite;
 
-
+    private void Awake()
+    {
+        instance=this;
+    }
 
 
 
@@ -36,27 +42,38 @@ public class JohnMovement : MonoBehaviour
        
         Rigidbody2D = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
       //  salto_sound = GetComponent<AudioClip>();
     }
 
     private void Update()
     {
-       
+
         if (der)
+
         {
-            transform.Translate(Vector3.right * Speed * Time.deltaTime);
+           
+            transform.Translate(Vector3.right * Speed * Time.deltaTime );
+            sprite.flipX= false;
+            Animator.SetBool("running", der);
         }
-        else if (izq)
+        else if (izq )
         {
-            transform.Translate(Vector3.left * Speed * Time.deltaTime);
+            transform.Translate(Vector3.left * Speed * Time.deltaTime );
+           sprite.flipX = true;
+            Animator.SetBool("running", izq);
+
         }
+        
+    
+       
         // Movimiento
-        Horizontal = Input.GetAxisRaw("Horizontal");//input es cuando presionamos una tecla
+       // Horizontal = Input.GetAxisRaw("Horizontal");//input es cuando presionamos una tecla
 
           //  if (Horizontal < 0.0f) transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
            // else if (Horizontal > 0.0f) transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 
-            Animator.SetBool("running", Horizontal != 0.0f);
+           // Animator.SetBool("running", Horizontal != 0.0f);
 
             // Detectar Suelo
             // Debug.DrawRay(transform.position, Vector3.down * 0.1f, Color.red);
@@ -65,7 +82,7 @@ public class JohnMovement : MonoBehaviour
                 piso = true;
             }
             else piso = false;
-
+                
        
         // Salto
         /*  if (Input.GetKeyDown(KeyCode.W) && piso)
@@ -92,7 +109,7 @@ public class JohnMovement : MonoBehaviour
             Rigidbody2D.constraints = RigidbodyConstraints2D.FreezeAll;
         }
         
-}
+     }
 
     private void FixedUpdate()
     {
@@ -138,10 +155,6 @@ public class JohnMovement : MonoBehaviour
          Destroy(gameObject);
          SceneManager.LoadScene(1);
         }
-    }
-    public void muerte()
-    {
-      
     }
 
     public void Izquierda()

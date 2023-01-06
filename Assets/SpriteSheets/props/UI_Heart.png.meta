@@ -1,22 +1,16 @@
 fileFormatVersion: 2
-guid: e56c669cdf4be3a49a088878dc824364
+guid: d9a616f95048ea84e8fc6f7920f846b8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 591526336708533081
-    second: john_idle_0
+      213: 8109154662235370213
+    second: UI_Heart_0
   - first:
-      213: 86465375316498939
-    second: john_idle_1
+      213: 2139837793675082937
+    second: UI_Heart_1
   - first:
-      213: -3486833154839190509
-    second: john_idle_2
-  - first:
-      213: 2015082418601771701
-    second: john_idle_3
-  - first:
-      213: 4512481057789823894
-    second: john_idle_4
+      213: -4390673095631447188
+    second: UI_Heart_2
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -62,7 +56,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -77,15 +71,15 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 64
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -94,10 +88,22 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 64
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,10 +112,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
-    maxTextureSize: 2048
+    maxTextureSize: 64
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -118,10 +124,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 2048
+    maxTextureSize: 64
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,13 +138,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: john_idle_0
+      name: UI_Heart_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 19
-        height: 18
+        width: 13
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95bdcc6b116853800800000000000000
-      internalID: 591526336708533081
+      spriteID: c77f0d6fa52143d498eb5e1c1c20b788
+      internalID: 8109154662235370213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: john_idle_1
+      name: UI_Heart_1
       rect:
         serializedVersion: 2
-        x: 31
+        x: 14
         y: 0
-        width: 19
-        height: 18
+        width: 13
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf95c1dfccf233100800000000000000
-      internalID: 86465375316498939
+      spriteID: a8a603124f070a04db57b76a36cd517b
+      internalID: 2139837793675082937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: john_idle_2
+      name: UI_Heart_2
       rect:
         serializedVersion: 2
-        x: 57
+        x: 28
         y: 0
-        width: 19
-        height: 18
+        width: 13
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,50 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31461ce38b74c9fc0800000000000000
-      internalID: -3486833154839190509
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: john_idle_3
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 0
-        width: 19
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b2c4e988c207fb10800000000000000
-      internalID: 2015082418601771701
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: john_idle_4
-      rect:
-        serializedVersion: 2
-        x: 109
-        y: 0
-        width: 19
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 69bcd392d9d8f9e30800000000000000
-      internalID: 4512481057789823894
+      spriteID: 3812db01545ccdf4392046f0800857d1
+      internalID: -4390673095631447188
       vertices: []
       indices: 
       edges: []
@@ -247,11 +211,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      john_idle_4: 4512481057789823894
-      john_idle_3: 2015082418601771701
-      john_idle_2: -3486833154839190509
-      john_idle_1: 86465375316498939
-      john_idle_0: 591526336708533081
+      UI_Heart_0: 8109154662235370213
+      UI_Heart_2: -4390673095631447188
+      UI_Heart_1: 2139837793675082937
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
