@@ -149,12 +149,12 @@ public class JohnMovement : MonoBehaviour
 
     public void Hit()
     {
-        Health -= 1;
+       /* Health -= 1;
         if (Health == 0)
         { 
          Destroy(gameObject);
          SceneManager.LoadScene(1);
-        }
+        }*/
     }
 
     public void Izquierda()

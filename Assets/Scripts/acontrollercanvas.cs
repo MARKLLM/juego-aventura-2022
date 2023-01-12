@@ -8,6 +8,7 @@ public class acontrollercanvas : MonoBehaviour
 
     public Image vida1, vida2, vida3;//referencia a los corazones de vida
     public Sprite vidaCompleta, vidaVacia, mediaVida;
+    public Text monedaText;
     private void Awake()
     {
         instance = this;
@@ -16,7 +17,7 @@ public class acontrollercanvas : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        contarMonedas();//cuando comience el juego saldrá 0 ya que no ha colisionado con ninguna moneda
     }
 
     // Update is called once per frame
@@ -70,11 +71,12 @@ public class acontrollercanvas : MonoBehaviour
                 vida2.sprite = vidaVacia;
                 vida3.sprite = vidaVacia;
                 break;
-
-
-
-
-
         }
+    }
+
+    public void contarMonedas()
+    {
+        monedaText.text = LevelManager.instance.contadorMoneda.ToString();
+
     }
 }

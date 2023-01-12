@@ -8,6 +8,8 @@ public class LevelManager : MonoBehaviour
     public static LevelManager instance;
     //variable para dar cuanto tiempo queremos que demore el player en aparecer 
     public float TiempowaitToRespawn;
+    public int contadorMoneda;
+    public int sumarpuntosenemigo;
     private void Awake()
     {
         instance = this;
@@ -29,6 +31,7 @@ public class LevelManager : MonoBehaviour
         StartCoroutine(RespawnCo()); // llamamos una corutina creada mas abajo 
     }
     //LAS CORUTINAS NOS PERMITEN ESPERAR CIERTA CANTIDAD DE SEGUNDOS ANTES DE EJECUTAR UN CODIGO 
+   //IENUMERATOR ES PARA DECLARAR LAS CORUTINAS
     IEnumerator RespawnCo()
     {
         acontrollervidaplayer.instance.gameObject.SetActive(false); //desactivamos al player cuando muere 
@@ -40,6 +43,6 @@ public class LevelManager : MonoBehaviour
         acontrollervidaplayer.instance.transform.position = checkpointController.instance.spawnPoint; //spawnpoint es donde guardamos esos datos del checkpoint
         //lo siguiente es para que cuando el player comience de nuevo aparezca con todas sus vidas
         acontrollervidaplayer.instance.vidaActual = acontrollervidaplayer.instance.vidaTotal;
-    
+        acontrollercanvas.instance.UpdateVida();
     }
 }
