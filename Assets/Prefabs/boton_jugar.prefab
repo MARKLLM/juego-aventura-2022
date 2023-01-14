@@ -122,9 +122,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 11500000, guid: 88007133b0f897440a680fde71c48f8d, type: 3}
         m_TargetAssemblyTypeName: otroNivel, Assembly-CSharp
-        m_MethodName: siguienteNivel
+        m_MethodName: 
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

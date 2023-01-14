@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 616a6179f82d8834893054b8f0d93f90
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - John: {fileID: 4457968187076315384, guid: 3745f80661c3b1b409703adb9c43e45a, type: 3}
+  - BulletPrefab: {fileID: 9141338218809068285, guid: 25e8272bdec09f94e877850708a6b54f, type: 3}
+  - efect_muerte_enemy: {fileID: 8039538098935392780, guid: 9cf145adf4eb3d44583dec17ee29264b, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

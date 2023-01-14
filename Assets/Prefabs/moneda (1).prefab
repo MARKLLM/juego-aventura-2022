@@ -101,8 +101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sonidoMoneda: {fileID: 7298332000309067622, guid: 79ee7a0ee90a4e349bfa7b84b5a7ef1f, type: 3}
-  puntaje: 0
-  puntajeText: {fileID: 0}
 --- !u!61 &1748258064285800675
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -163,4 +161,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coin: 1
   vidaextra: 0
-  efecto_recolector: {fileID: 0}
+  efecto_recolector: {fileID: 9117035895274128506, guid: 975995944869ae64bb19e26734e6f1ad, type: 3}
+  sonidoMoneda: {fileID: 7298332000309067622, guid: 79ee7a0ee90a4e349bfa7b84b5a7ef1f, type: 3}

@@ -12,9 +12,18 @@ EditorBuildSettings:
     path: Assets/Scenes/nivel_1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/nivel_2.unity
-    guid: 305564ccba88537488d749f9fcd2977f
+    path: Assets/Scenes/nivelxxx.unity
+    guid: eb24636891da1ad43a837c792a800498
   - enabled: 1
     path: Assets/Scenes/prueba.unity
     guid: ed33abc683d46c344bf0327f7254cc99
+  - enabled: 1
+    path: Assets/Scenes/ppossiible.unity
+    guid: 6029d33e6ca5fcb408d3ca3046411be9
+  - enabled: 0
+    path: Assets/Scenes/segundo.unity
+    guid: ddca84c49b5ec9f489ebd90bb8c18ece
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

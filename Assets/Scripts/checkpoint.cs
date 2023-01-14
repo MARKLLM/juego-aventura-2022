@@ -7,6 +7,8 @@ public class checkpoint : MonoBehaviour
     public static checkpoint instance;
     public SpriteRenderer spriteR;//actuaizamos el spriterenderer
     public Sprite checkOn, checkOff;
+    public GameObject sonido_checkP;
+
     private void Awake()
     {
         instance = this;
@@ -17,7 +19,7 @@ public class checkpoint : MonoBehaviour
         {
             checkpointController.instance.DesactivarCheckpoints();//instanciamos la funcion desactivarcheckpoint
          spriteR.sprite = checkOn;//con esto encendemos el checkpoint
-          
+            Instantiate(sonido_checkP);
         }checkpointController.instance.SetSpawnPoint(transform.position);//guardamos la posicion del ÚLTIMO  checkpoint que esta encendido 
 
     }

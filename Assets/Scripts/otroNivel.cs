@@ -15,7 +15,10 @@ public class otroNivel : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-
+           // StartCoroutine(corutinaNivelnuevo());
+           // acontrollercanvas.instance.nivelComplet.SetActive(true);
+         
+         
             siguienteNivel(indiceNivel);
         }
         if (cambioNivel)
@@ -36,5 +39,15 @@ public class otroNivel : MonoBehaviour
         Debug.Log("esta saliendo");
 
     }
+
+    
+  /*  public  IEnumerator corutinaNivelnuevo()
+    {
+        yield return new WaitForSeconds(5f);
+        acontrollercanvas.instance.nivelComplet.SetActive(true);
+
+       // yield return new WaitForSeconds(5f);
+        siguienteNivel(indiceNivel);
+    }*/
 }
 

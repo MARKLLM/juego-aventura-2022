@@ -8,6 +8,7 @@ public class checkpointController : MonoBehaviour
     public checkpoint[] checkpoints;
     public Vector3 spawnPoint; //variable para guardar la posicion del jugador y del checkpoint encendido 
                                //vector3 guarda las coordenadas de spawnpoint
+ 
     private void Awake()
     {
        instance = this;

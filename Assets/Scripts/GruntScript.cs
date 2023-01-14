@@ -50,7 +50,7 @@ public class GruntScript : MonoBehaviour
             Destroy(gameObject);
            
             
-            Instantiate(efect_muerte_enemy, GruntScript.instance.transform.position, GruntScript.instance.transform.rotation);
+           Instantiate(efect_muerte_enemy, GruntScript.instance.transform.position, GruntScript.instance.transform.rotation);
 
         }
        /* float dropSelect = Random.Range(0, 100f);

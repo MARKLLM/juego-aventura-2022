@@ -9,6 +9,11 @@ public class acontrollercanvas : MonoBehaviour
     public Image vida1, vida2, vida3;//referencia a los corazones de vida
     public Sprite vidaCompleta, vidaVacia, mediaVida;
     public Text monedaText;
+    public GameObject nivelComplet;
+   // public Image desvanecer_imagen;
+   // public float desvanecer_velocidad;
+ //   private bool pasarde0a1,pasarde1a0;//para la transparencia de la pantalla negra
+
     private void Awake()
     {
         instance = this;
@@ -18,12 +23,28 @@ public class acontrollercanvas : MonoBehaviour
     void Start()
     {
         contarMonedas();//cuando comience el juego saldrá 0 ya que no ha colisionado con ninguna moneda
+       // desvanecerde1a0(); // llamamos a la funcion al iniciar el canvas para que se desvanezca de negro a blanco
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+      /*  if (pasarde0a1)
+        {//usamos los componentes de color para devanecer la imagen red,green,blue,
+            desvanecer_imagen.color = new Color(desvanecer_imagen.color.r, desvanecer_imagen.color.g, desvanecer_imagen.color.b,Mathf.MoveTowards(desvanecer_imagen.color.a,1f,desvanecer_velocidad * Time.deltaTime));
+            if (desvanecer_imagen.color.a ==1)
+            {
+                pasarde0a1 = false;//si ya es igual a uno se desactiva
+            }
+        }
+        if (pasarde1a0)
+        {//usamos los componentes de color para devanecer la imagen red,green,blue,
+            desvanecer_imagen.color = new Color(desvanecer_imagen.color.r, desvanecer_imagen.color.g, desvanecer_imagen.color.b, Mathf.MoveTowards(desvanecer_imagen.color.a, 0f, desvanecer_velocidad * Time.deltaTime));
+            if (desvanecer_imagen.color.a == 0)
+            {
+                pasarde1a0 = false;//si ya es igual a 0 se desactiva
+            }
+        }*/
     }
     public void UpdateVida()
     {
@@ -79,4 +100,15 @@ public class acontrollercanvas : MonoBehaviour
         monedaText.text = LevelManager.instance.contadorMoneda.ToString();
 
     }
+   /* public void desvanecerde0a1()
+    {
+        pasarde0a1 = true;
+        pasarde1a0 = false;
+    }
+    public void desvanecerde1a0()
+    {
+        pasarde0a1 = false;
+        pasarde1a0 = true;
+    }*/
 }
+

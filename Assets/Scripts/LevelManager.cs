@@ -9,7 +9,7 @@ public class LevelManager : MonoBehaviour
     //variable para dar cuanto tiempo queremos que demore el player en aparecer 
     public float TiempowaitToRespawn;
     public int contadorMoneda;
-    public int sumarpuntosenemigo;
+   // public int sumarpuntosenemigo;
     private void Awake()
     {
         instance = this;
@@ -36,7 +36,11 @@ public class LevelManager : MonoBehaviour
     {
         acontrollervidaplayer.instance.gameObject.SetActive(false); //desactivamos al player cuando muere 
        // luego esperamos los segundos del spawn.
-        yield return new WaitForSeconds(TiempowaitToRespawn);
+        yield return new WaitForSeconds(TiempowaitToRespawn/*- (1f / acontrollercanvas.instance.desvanecer_velocidad)*/);
+       // acontrollercanvas.instance.desvanecerde0a1();
+        //yield return new WaitForSeconds((1f / acontrollercanvas.instance.desvanecer_velocidad) + .2f);
+       //acontrollercanvas.instance.desvanecerde1a0();
+       
         //pasado el tiempo revivimos al player
         acontrollervidaplayer.instance.gameObject.SetActive(true);
         //luego el player aparece en el ultimo checkpoint guardado que tocó cuando murió
@@ -45,4 +49,13 @@ public class LevelManager : MonoBehaviour
         acontrollervidaplayer.instance.vidaActual = acontrollervidaplayer.instance.vidaTotal;
         acontrollercanvas.instance.UpdateVida();
     }
+
+   /* public void finNivel()
+    {
+        StartCoroutine();
+    }
+    public  IEnumerator finNIVELcorutina()
+    { 
+    
+    }*/
 }
